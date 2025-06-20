@@ -5,13 +5,21 @@ This project is a simple RESTful web service built with Spring Boot that integra
 ## Features
 
 -Fetches 7-day weather forecast for any geographic coordinates.
+
 -Calculates estimated solar energy production (kWh) based on sunshine duration.
+
 -Validates input parameters (latitude and longitude ranges).
+
 -Handles and customizes error responses for:
+
   -Invalid input
+  
   -API failures
+  
   -Server exceptions
+
 -Unit and integration tests included (JUnit, Mockito).
+
 -Uses **MapStruct** for mapping between DTOs and internal data models.
 
 ## API Endpoint
