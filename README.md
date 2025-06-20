@@ -12,11 +12,9 @@ This project is a simple RESTful web service built with Spring Boot that integra
 
 -Handles and customizes error responses for:
 
-  -Invalid input
-  
-  -API failures
-  
-  -Server exceptions
+Invalid input
+API failures
+Server exceptions
 
 -Unit and integration tests included (JUnit, Mockito).
 
