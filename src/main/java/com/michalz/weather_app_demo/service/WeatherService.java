@@ -4,6 +4,7 @@ import com.michalz.weather_app_demo.exception.ExternalApiException;
 import com.michalz.weather_app_demo.mapper.WeatherMapper;
 import com.michalz.weather_app_demo.dto.DailyForecastDTO;
 import com.michalz.weather_app_demo.dto.WeatherDTO;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -15,14 +16,11 @@ import java.util.List;
 
 
 @Service
+@RequiredArgsConstructor
 public class WeatherService {
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate;
     private final WeatherMapper weatherMapper;
-
-    public WeatherService(WeatherMapper weatherMapper) {
-        this.weatherMapper = weatherMapper;
-    }
 
 
     public List<DailyForecastDTO> getFormatted7DayForecast(double latitude, double longitude) {
