@@ -20,7 +20,7 @@ public class ApplicationConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:8081, https://weatherappdemo-596h.onrender.com")
+                        .allowedOrigins("http://localhost:8081, https://weatherappdemo-596h.onrender.com, https://weatherappdemofront.onrender.com")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);
