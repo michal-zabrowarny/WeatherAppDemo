@@ -1,0 +1,6 @@
+com\michalz\weather_app_demo\dto\WeatherDTO$Daily.class
+com\michalz\weather_app_demo\dto\WeatherDTO.class
+com\michalz\weather_app_demo\dto\DailyForecastDTO.class
+com\michalz\weather_app_demo\config\ApplicationConfig$1.class
+com\michalz\weather_app_demo\exception\ExternalApiException.class
+com\michalz\weather_app_demo\config\ApplicationConfig.class
